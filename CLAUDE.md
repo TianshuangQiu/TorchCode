@@ -179,6 +179,8 @@ assert torch.equal(result, torch.tensor([0, 0, 0, 1, 2, 2, 2, 2]))
 | 4 | Code | Debug prints / verification |
 | 5 | Code | `from torch_judge import check; check("task_id")` |
 
+> **Important:** `torch_judge` only works for official problems 1–40. Custom problems (#41+) cannot use `check()` — the call will fail or silently do nothing. For custom problems, **replace cell 5 with inline test cases** (assert statements directly in the notebook). Add at least 3–4 assertions covering basic correctness, an edge case, and a large-N timing check, since there is no harness to catch regressions automatically.
+
 **Reduction step box** — required in every template cell 0:
 
 ```
