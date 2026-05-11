@@ -202,3 +202,12 @@ This is the most important pedagogical element for this user. Always include it.
 ```
 | N | <a href="GITHUB_URL">Title</a> <a href="COLAB_URL"><img src="...colab-badge.svg" height="20"></a> | `fn(args)` | ![Difficulty badge] | ⭐ | key concepts |
 ```
+
+**Known issue — always verify README edits with grep:**
+The Edit tool has been observed to report "updated successfully" for large README insertions without actually writing the content. After any README edit, confirm with:
+
+```bash
+grep -n "search term" README.md
+```
+
+If the content is missing, re-run the edit using a unique anchor string (e.g. the full Conv2d table row) rather than just the section heading.
