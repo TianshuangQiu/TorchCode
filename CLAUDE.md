@@ -119,6 +119,8 @@ A good problem for this user:
 
 ## TorchCode Repo: Adding New Problems
 
+**This is a fork.** The user's repo is `https://github.com/TianshuangQiu/TorchCode` (not `duoan/TorchCode`). All new problems (#41+) only exist here. Use `TianshuangQiu/TorchCode` in all Colab badge URLs and GitHub links for new problems. The scaffold script (`scripts/new_problem.py`) already uses the correct base URLs.
+
 ### Quick scaffold
 
 ```bash

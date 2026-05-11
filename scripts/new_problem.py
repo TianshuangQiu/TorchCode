@@ -27,8 +27,8 @@ DIFFICULTY_BADGE = {
     "Medium": "![Medium](https://img.shields.io/badge/Medium-FF9800?style=flat-square)",
     "Hard":   "![Hard](https://img.shields.io/badge/Hard-F44336?style=flat-square)",
 }
-COLAB_BASE = "https://colab.research.google.com/github/duoan/TorchCode/blob/master"
-GITHUB_BASE = "https://github.com/duoan/TorchCode/blob/master"
+COLAB_BASE = "https://colab.research.google.com/github/TianshuangQiu/TorchCode/blob/master"
+GITHUB_BASE = "https://github.com/TianshuangQiu/TorchCode/blob/master"
 
 
 def make_task_file(task_id: str, title: str, difficulty: str) -> str:
