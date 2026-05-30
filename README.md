@@ -27,7 +27,7 @@ Practice implementing operators and architectures from scratch — the exact ski
 [![GitHub stars](https://img.shields.io/github/stars/duoan/TorchCode?style=social)](https://github.com/duoan/TorchCode)
 [![GitHub Container Registry](https://img.shields.io/badge/ghcr.io-TorchCode-blue?style=flat-square&logo=github)](https://ghcr.io/duoan/torchcode)
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Spaces-TorchCode-blue?style=flat-square)](https://huggingface.co/spaces/duoan/TorchCode)
-![Problems](https://img.shields.io/badge/problems-55-orange?style=flat-square)
+![Problems](https://img.shields.io/badge/problems-58-orange?style=flat-square)
 ![GPU](https://img.shields.io/badge/GPU-not%20required-brightgreen?style=flat-square)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=duoan/TorchCode&type=Date)](https://star-history.com/#duoan/TorchCode&Date)
@@ -44,7 +44,7 @@ TorchCode gives you a **structured practice environment** with:
 
 | | Feature | |
 |---|---|---|
-| 🧩 | **55 curated problems** | PyTorch ML engineering + geometry / spatial reasoning problems |
+| 🧩 | **58 curated problems** | PyTorch ML engineering + geometry / spatial reasoning problems |
 | ⚖️ | **Automated judge** | Correctness checks, gradient verification, and timing |
 | 🎨 | **Instant feedback** | Colored pass/fail per test case, just like competitive programming |
 | 💡 | **Hints when stuck** | Nudges without full spoilers |
@@ -157,6 +157,9 @@ Geometry and computational geometry problems that appear in computer vision (bou
 | 53 | <a href="https://github.com/TianshuangQiu/TorchCode/blob/master/templates/53_winding_number.ipynb" target="_blank">Winding Number</a> <a href="https://colab.research.google.com/github/TianshuangQiu/TorchCode/blob/master/templates/53_winding_number.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" height="20"></a> | `winding_number(points, polygon)` | ![Medium](https://img.shields.io/badge/Medium-FF9800?style=flat-square) | ⭐ | Winding count, broadcast `(P,1,2)` vs `(1,V,2)`, robust to degenerate edges |
 | 54 | <a href="https://github.com/TianshuangQiu/TorchCode/blob/master/templates/54_closest_pair.ipynb" target="_blank">Closest Pair of Points</a> <a href="https://colab.research.google.com/github/TianshuangQiu/TorchCode/blob/master/templates/54_closest_pair.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" height="20"></a> | `closest_pair(points)` | ![Hard](https://img.shields.io/badge/Hard-F44336?style=flat-square) | ⭐ | Divide and conquer O(N log N), strip optimisation |
 | 55 | <a href="https://github.com/TianshuangQiu/TorchCode/blob/master/templates/55_line_polygon_intersections.ipynb" target="_blank">Line-Polygon Intersections</a> <a href="https://colab.research.google.com/github/TianshuangQiu/TorchCode/blob/master/templates/55_line_polygon_intersections.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" height="20"></a> | `line_polygon_intersections(origin, dir, polygon)` | ![Medium](https://img.shields.io/badge/Medium-FF9800?style=flat-square) | 💡 | Cramer's rule, parametric line-segment intersection, vectorised over V edges |
+| 56 | <a href="https://github.com/TianshuangQiu/TorchCode/blob/master/templates/56_capsule_overlap.ipynb" target="_blank">Batch Capsule-Capsule Overlap</a> <a href="https://colab.research.google.com/github/TianshuangQiu/TorchCode/blob/master/templates/56_capsule_overlap.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" height="20"></a> | `capsule_overlap(caps_a, caps_b)` | ![Medium](https://img.shields.io/badge/Medium-FF9800?style=flat-square) | ⭐ | Segment-to-segment distance, parametric clamp, `(N,1,2)` vs `(1,M,2)` broadcasting |
+| 57 | <a href="https://github.com/TianshuangQiu/TorchCode/blob/master/templates/57_sat_overlap.ipynb" target="_blank">SAT Convex Polygon Overlap</a> <a href="https://colab.research.google.com/github/TianshuangQiu/TorchCode/blob/master/templates/57_sat_overlap.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" height="20"></a> | `sat_overlap(poly_a, poly_b)` | ![Medium](https://img.shields.io/badge/Medium-FF9800?style=flat-square) | 🔥 | Separating Axis Theorem, `np.roll` edge normals, projection intervals |
+| 58 | <a href="https://github.com/TianshuangQiu/TorchCode/blob/master/templates/58_capsule_poly_overlap.ipynb" target="_blank">Capsule-Convex Polygon Overlap</a> <a href="https://colab.research.google.com/github/TianshuangQiu/TorchCode/blob/master/templates/58_capsule_poly_overlap.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" height="20"></a> | `capsule_poly_overlap(capsule, poly)` | ![Hard](https://img.shields.io/badge/Hard-F44336?style=flat-square) | ⭐ | Composes SAT point-in-polygon, orientation test, segment-to-segment distance |
 
 ### 🧠 Attention Mechanisms — The heart of modern ML interviews
 
